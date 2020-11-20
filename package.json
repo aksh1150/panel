@@ -117,10 +117,7 @@
     "html-loader": "0.5.5",
      "babel-loader": "8.0.5",
      "@babel/cli": "7.4.3",
-    "@babel/core": "7.4.3"
-  },
-  "devDependencies": {
-    
+    "@babel/core": "7.4.3",
     "@babel/plugin-proposal-class-properties": "7.4.0",
     "@babel/plugin-syntax-dynamic-import": "7.2.0",
     "@babel/plugin-transform-modules-commonjs": "7.4.3",
@@ -137,7 +134,11 @@
     "babel-plugin-lodash": "3.3.4",
     "babel-plugin-react-intl": "3.0.1",
     "babel-plugin-styled-components": "1.10.0",
-    "babel-plugin-transform-react-remove-prop-types": "0.4.24",
+    "babel-plugin-transform-react-remove-prop-types": "0.4.24"
+  },
+  "devDependencies": {
+    
+    
    
     "compare-versions": "3.4.0",
     "compression-webpack-plugin": "2.0.0",
