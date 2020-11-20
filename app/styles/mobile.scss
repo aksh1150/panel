@@ -1,0 +1,64 @@
+// Inheritance for mobile
+
+@mixin h1-mobile {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 46px;
+  letter-spacing: 1.2px;
+}
+
+@mixin h2-mobile {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 1.2px;
+}
+
+@mixin h3-mobile {
+  font-size: 28px;
+  font-weight: 300;
+  line-height: 36px;
+  letter-spacing: 1.2px;
+}
+
+@mixin h4-mobile {
+  font-size: 26px;
+  font-weight: 300;
+  line-height: 36px;
+  letter-spacing: 1.2px;
+}
+
+@mixin common-typography {
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 1.2px;
+}
+
+@mixin h5-mobile {
+  font-size: 18px;
+  @include common-typography;
+}
+
+@mixin h6-mobile {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 32px;
+  letter-spacing: 1.2px;
+}
+
+@mixin p-mobile {
+  font-size: 18px;
+  letter-spacing: 1.2px;
+}
+
+@mixin p2-mobile {
+  font-size: 16px;
+  letter-spacing: 1.2px;
+}
+
+@mixin p3-mobile {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+  letter-spacing: 1.2px;
+}

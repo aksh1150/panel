@@ -1,0 +1,67 @@
+// Primary Colour
+$primary: #1946b4;
+
+// Secondary Colours
+$spaceship: #286b9c;
+$tropical: #5bcdd4;
+$periwinkle: #8cb4f8;
+$sunshine: #f9d750;
+$blush: #f3b6c3;
+
+$light-spaceship: #bed2e1;
+$light-tropical: #cdf0f2;
+$light-periwinkle: #e1ebfc;
+$light-sunshine: #ffe8b6;
+$light-blush: #fae2e7;
+
+// Specialty Colours
+$special-nature-green: #4aaa93;
+$special-bright-blue: #84eef6;
+$special-skin-pink: #f9cfbe;
+$special-wood-brown: #765151;
+$special-warm-orange: #ed9e3e;
+
+// Warning and Success Colours
+$danger-red: #de3e44;
+$success-green: #00c3a7;
+
+// Shades of grey
+$base-dark-grey: #2f3d45;
+$base-medium-grey: #979797;
+$base-light-grey: #dbdfda;
+$base-white: #ffffff;
+$background-grey: #f1f1f1;
+$background-gray: #fafafa;
+
+// Desktop HD break-points
+$desktop-hd-container: 1400px;
+$desktop-hd-margin: 20px;
+$desktop-hd-column: 12;
+$desktop-hd-gutter: 3;
+
+// Desktop break-points
+$desktop-container: 1000px;
+$desktop-margin: 20px;
+$desktop-column: 6;
+$desktop-gutter: 3;
+
+// Tablet break-point
+$tab-container: 768px;
+$tab-margin: 20px;
+$tab-column: 4;
+$tab-gutter: 3;
+
+// Mobile L
+$mobile-l-container: 540px;
+$mobile-l-margin: 18px;
+$mobile-l-column: 2;
+$mobile-l-gutter: 3;
+
+// Mobile S
+$mobile-s-margin: 15px;
+$mobile-s-gutter: 3;
+$mobile-s-column: 2;
+
+:export {
+  primarycolor: $primary;
+}

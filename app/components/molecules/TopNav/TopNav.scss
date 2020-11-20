@@ -1,0 +1,52 @@
+@import '../../../styles/variables';
+@import '../../../styles/desktop.scss';
+@import '../../../styles/mixins.scss';
+.MuiPaper-elevation4 {
+  background-color: $base-white !important;
+  color: $base-dark-grey !important;
+  .profilebtn {
+    margin-left: auto;
+    margin-right: auto;
+
+    @include respond(md) {
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+    .MuiButton-label {
+      font-weight: 600;
+    }
+  }
+  .mobileProIcon {
+    height: 50px;
+    width: 50px;
+  }
+}
+header {
+  z-index: 999 !important;
+}
+.username {
+  margin-left: 20px;
+  padding: 25px;
+}
+.loginlogout {
+  margin: 2px;
+  font-size: 18px;
+  color: $base-dark-grey;
+  padding: 12px;
+  font-weight: 600;
+}
+.imglogo {
+  height: 50px;
+  position: absolute;
+  top: 0px;
+  left: 20px;
+  margin-top: 5px;
+  @include respond(md) {
+    margin-top: 10px;
+  }
+}
+.profilepic {
+  height: 50px;
+  position: absolute;
+  left: 5px;
+}

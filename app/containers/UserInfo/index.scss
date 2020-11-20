@@ -1,0 +1,22 @@
+@import '../../styles/mixins';
+@import '../../styles/variables';
+@import '../../styles/desktop.scss';
+@import '../../styles/mobile.scss';
+
+.divs {
+  width: $desktop-container;
+  margin: $desktop-margin;
+  .boxes {
+    background-color: $base-medium-grey;
+    border: 1px solid #000000;
+    margin: $mobile-l-margin;
+  }
+  .paragraph {
+    color: red;
+    @include h5-mobile;
+    @include respond(md) {
+      color: $primary;
+      @include h1-desktop;
+    }
+  }
+}

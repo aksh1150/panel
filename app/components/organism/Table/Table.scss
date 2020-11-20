@@ -1,0 +1,15 @@
+@import '../../../styles/variables';
+@import '../../../styles/desktop.scss';
+@import '../../../styles/mixins.scss';
+
+.TableHead {
+  font-family: LimerickMedium !important;
+  color: $base-dark-grey !important;
+  font-size: 18px !important;
+}
+.TableContent {
+  font-family: LimerickLight !important;
+}
+.MuiTableHead-root {
+  background: $light-spaceship;
+}

@@ -1,0 +1,29 @@
+@import '../../../styles/mixins.scss';
+
+.dialogClass {
+  .baselink.hasIcon.close {
+    min-width: auto;
+  }
+  .MuiPaper-rounded {
+    border-radius: 0px;
+  }
+
+  h4 {
+    font-family: LimerickMedium;
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+  .dialog-content {
+    padding: 0px 15px 20px;
+    @include respond(sm) {
+      padding: 0px 80px 30px;
+    }
+  }
+  .close {
+    &.baselink.extraclass .MuiButton-label {
+      min-width: auto;
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+  }
+}

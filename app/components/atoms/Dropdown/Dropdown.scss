@@ -1,0 +1,48 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins.scss';
+
+.Dropdown {
+  .Dropdown {
+    margin-bottom: 1rem;
+  }
+  width: 100%;
+  margin-left: 0px;
+  margin-right: inherit;
+  &.half {
+    width: 50%;
+    margin-left: 0px;
+  }
+  &.full {
+    width: 100%;
+  }
+  &.error {
+    outline: red auto 4px;
+  }
+
+  label {
+    font-family: LimerickMedium;
+  }
+  h5 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .inlineLabel {
+    @include respond(sm) {
+      display: inline-block;
+      text-align: right;
+      width: 200px;
+      margin-right: 20px;
+    }
+  }
+  .extraClass {
+    display: inline-block;
+    min-width: 280px;
+    color: $base-dark-grey;
+    font-family: LimerickMedium;
+    margin-bottom: 1rem;
+    .css-yk16xz-control {
+      border: 1px solid $periwinkle;
+      border-radius: 1px;
+    }
+  }
+}

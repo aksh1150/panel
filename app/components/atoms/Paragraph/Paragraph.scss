@@ -1,0 +1,35 @@
+@import '../../../styles/variables';
+@import '../../../styles/desktop.scss';
+@import '../../../styles/mobile.scss';
+@import '../../../styles/mixins.scss';
+
+.Paragraph {
+  font-family: LimerickMedium;
+  &.large {
+    @include p-mobile;
+    @include respond(sm) {
+      @include p-desktop;
+    }
+  }
+  &.medium {
+    @include p2-mobile;
+    @include respond(sm) {
+      @include p2-desktop;
+    }
+  }
+  &.small {
+    @include p3-mobile;
+    @include respond(sm) {
+      @include p3-desktop;
+    }
+  }
+  &.primary {
+    color: $primary;
+  }
+  &.white {
+    color: $base-white;
+  }
+  &.royal {
+    color: $base-dark-grey;
+  }
+}

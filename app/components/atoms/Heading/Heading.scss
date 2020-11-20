@@ -1,0 +1,62 @@
+@import '../../../styles/variables';
+@import '../../../styles/desktop.scss';
+@import '../../../styles/mobile.scss';
+@import '../../../styles/mixins.scss';
+
+.h1 {
+  @include h1-mobile;
+  @include respond(sm) {
+    @include h1-desktop;
+  }
+}
+
+.h2 {
+  @include h2-mobile;
+  @include respond(sm) {
+    @include h2-desktop;
+  }
+}
+
+.h3 {
+  @include h3-mobile;
+  @include respond(sm) {
+    @include h3-desktop;
+  }
+}
+
+.h4 {
+  @include h4-mobile;
+  @include respond(sm) {
+    @include h4-desktop;
+  }
+}
+
+.h5 {
+  @include h5-mobile;
+  @include respond(sm) {
+    @include h5-desktop;
+  }
+}
+
+.h6 {
+  @include h6-mobile;
+  @include respond(sm) {
+    @include h6-desktop;
+  }
+}
+
+.p {
+  @include p-mobile;
+  @include respond(sm) {
+    @include p-desktop;
+  }
+}
+.primary {
+  color: $primary;
+}
+.white {
+  color: $base-white;
+}
+.royal {
+  color: $base-dark-grey;
+}

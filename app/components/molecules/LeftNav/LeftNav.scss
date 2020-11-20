@@ -1,0 +1,80 @@
+@import '../../../styles/mixins.scss';
+@import '../../../styles/variables';
+
+.makeStyles-menuButton-4 {
+  margin-right: 0px !important;
+  @include respond(md) {
+    margin-right: 15px !important;
+  }
+}
+.MuiDrawer-paper {
+  background: $base-dark-grey !important;
+}
+.iconLink {
+  color: $base-medium-grey;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  .MuiSvgIcon-root {
+    font-size: 26px;
+  }
+  &:hover {
+    color: $base-white;
+    text-decoration: none;
+  }
+  &:active {
+    color: $base-white;
+  }
+
+  span {
+    font-size: 18px;
+    margin-left: 20px;
+  }
+}
+
+%common {
+  padding: 5px !important;
+  background: $base-white !important;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 3px -2px,
+    rgba(0, 0, 0, 0.14) 0px 3px 4px 0px, rgba(0, 0, 0, 0.12) 0px 1px 8px 0px;
+  z-index: 9999;
+  position: fixed !important;
+  top: 100px;
+  &:hover {
+    background: $primary !important;
+    color: $base-white !important;
+  }
+}
+
+.menuicon {
+  @extend %common;
+  left: 225px;
+  opacity: 0;
+  &.show {
+    opacity: 1;
+    transition: opacity 1s cubic-bezier(0.4, 0, 0.2, 1) 0ms !important;
+  }
+}
+.openIcon {
+  left: 56px;
+  @extend %common;
+  opacity: 0;
+  @include respond(md) {
+    left: 65px;
+  }
+  &.show {
+    opacity: 1;
+    transition: opacity 2s cubic-bezier(0.4, 0, 0.2, 1) 2s !important;
+  }
+}
+// .show {
+//   opacity: 1;
+//   transition: opacity 5s linear;
+// }
+.hide {
+  opacity: 0;
+  transition: opacity 5s linear;
+}
+.MuiDrawer-paper {
+  z-index: 99 !important;
+}

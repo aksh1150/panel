@@ -1,0 +1,6 @@
+Endpoints: Below endpoints we are using to communicate with node server
+
+    1. POST     auth/register       for registration
+    2. POST     auth/checkEmail     for check user already registered or not
+    3. POST     auth/login          for login
+    4. GET      user/info           to get logged user's information

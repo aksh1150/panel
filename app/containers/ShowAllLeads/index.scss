@@ -1,0 +1,26 @@
+@import '../../styles/mixins.scss';
+@import '../../styles/variables.scss';
+
+.MuiContainer-maxWidthLg {
+  overflow: hidden;
+}
+.searchBox {
+  max-width: 300px;
+  @include respond(sm) {
+    max-width: 100% !important;
+  }
+
+  background-color: $background-grey !important;
+  border: none !important;
+}
+.addBtn {
+  width: 240px !important;
+  border: 1px solid $primary !important;
+  &:hover {
+    background: $light-periwinkle !important;
+    color: $primary !important;
+  }
+  .MuiButton-label {
+    color: $primary !important;
+  }
+}

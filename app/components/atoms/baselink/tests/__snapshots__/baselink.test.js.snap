@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<BaseLink /> should render and match the snapshot 1`] = `
+<DocumentFragment>
+  <a
+    class="baselink true"
+    data-testid="id"
+    rel="noreferrer"
+    target="_blank"
+  >
+    Home
+  </a>
+</DocumentFragment>
+`;

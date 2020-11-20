@@ -1,0 +1,12 @@
+@import '../../../styles/variables';
+@import '../../../styles/desktop.scss';
+.baselink {
+  cursor: pointer;
+  text-decoration: none;
+  color: $primary;
+  font-family: LimerickMedium;
+  &:hover {
+    text-decoration: underline;
+    color: $primary;
+  }
+}

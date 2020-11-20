@@ -1,0 +1,152 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+h3,
+h4 {
+  font-family: LimerickMedium;
+}
+.gridTopMargin {
+  margin-top: 70px;
+}
+.alt {
+  margin-top: 50px;
+  max-width: 350px;
+}
+.xlbg {
+  background-color: $base-white !important;
+}
+
+.MuiAccordionSummary-expandIcon {
+  position: absolute !important;
+  bottom: 0 !important;
+}
+.MuiAccordionSummary-content {
+  display: block !important;
+  h4,
+  h6 {
+    margin-top: 5px !important;
+    margin-bottom: 5px !important;
+  }
+}
+h4,
+h6 {
+  margin-top: 5px !important;
+  margin-bottom: 5px !important;
+}
+.borderColor {
+  border-left: 5px solid;
+  border-color: $blush;
+  &:nth-child(even) {
+    border-color: $primary;
+  }
+}
+.contactForm {
+  // width: 95% !important;
+  // @include respond(xl) {
+  //   width: 80% !important;
+  // }
+  .text-input input[type='text'],
+  .text-input input[type='email'],
+  .text-input input[type='tel'],
+  .text-input input[type='password'],
+  .text-input input[type='date'] {
+    margin-bottom: 0px !important;
+    max-width: 100% !important;
+  }
+
+  .text-input {
+    h5 {
+      margin-top: 2px !important;
+      margin-bottom: 2px !important;
+      font-size: 16px !important;
+    }
+  }
+}
+.mainPanelHEad {
+  textarea {
+    max-width: 50% !important;
+  }
+}
+.addBtns {
+  width: 60px !important;
+  min-width: auto !important;
+  border-radius: 4px !important;
+  height: 40px !important;
+  &:hover {
+    background: $light-periwinkle !important;
+    color: $primary !important;
+  }
+  .MuiButton-label {
+    color: $primary !important;
+  }
+}
+.rightBack {
+  background-color: $base-white;
+  padding-left: 25px !important;
+  @include respond(lg) {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 60px;
+    min-width: 450px;
+    max-width: 450px;
+    width: 450px;
+    height: 100vh;
+  }
+
+  .MuiTabs-root {
+    border-top: 1px solid $base-dark-grey;
+    border-bottom: 1px solid $base-dark-grey;
+    text-align: center;
+
+    button {
+      width: 50%;
+    }
+  }
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
+    0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+}
+.btngroup {
+  text-align: center;
+  border-radius: 0px !important;
+}
+.MuiGrid-spacing-xs-3 > .MuiGrid-item {
+  padding: 0px !important;
+}
+.MuiGrid-spacing-xs-2 > .MuiGrid-item {
+  padding: 5px 15px !important;
+}
+.paddings {
+  padding: 15px !important;
+  &.box {
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+  }
+}
+.mainPanelHEad {
+  background-color: $base-white;
+}
+.otherCon {
+  border-top: 10px solid $background-gray;
+  margin-top: 30px;
+  padding-top: 30px;
+  &.padBotm {
+    padding-bottom: 50px;
+    .text-input {
+      display: flex;
+    }
+  }
+}
+.bottomSave {
+  margin-top: 50px !important;
+}
+.MuiDialogTitle-root {
+  padding-top: 0px !important;
+}
+.MuiDialogContent-root {
+  margin-top: 30px !important;
+}
+.close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}

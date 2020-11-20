@@ -1,0 +1,68 @@
+@import '../../../styles/variables';
+@import '../../../styles/desktop.scss';
+@import '../../../styles/mixins.scss';
+.baselink {
+  cursor: pointer;
+
+  .MuiButton-label {
+    text-transform: none;
+    @include p2-desktop;
+    font-weight: 500;
+  }
+
+  &.extraclass {
+    border-radius: 40px;
+    border: 1px solid $primary;
+    height: 50px;
+    @include respond(md) {
+      height: 50px;
+    }
+
+    .MuiButton-label {
+      min-width: 180px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      font-family: LimerickMedium;
+    }
+  }
+  &.hasIcon {
+    height: 35px;
+    min-width: 180px;
+    @include respond(md) {
+      height: 40px;
+    }
+    border-radius: 4px;
+
+    .MuiButton-startIcon {
+      position: absolute;
+      left: 15px;
+    }
+    .MuiButton-endIcon {
+      position: absolute;
+      right: 15px;
+    }
+  }
+  &.noLabel {
+    width: 64px;
+    height: 64px;
+    border-radius: 100%;
+    .MuiButton-startIcon {
+      position: relative;
+      margin-left: auto;
+      margin-right: auto;
+      left: auto;
+    }
+    .MuiButton-endIcon {
+      position: relative;
+      margin-left: auto;
+      margin-right: auto;
+      right: auto;
+    }
+  }
+  &.noBorder {
+    border: none;
+  }
+  &.roundBoarder {
+    border-radius: 40px;
+  }
+}

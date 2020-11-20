@@ -1,0 +1,33 @@
+@import '../../styles/mixins.scss';
+@import '../../styles/variables.scss';
+h3 {
+  font-family: LimerickBold;
+}
+
+.verification {
+  height: 50px;
+  width: 50px !important;
+  font-size: 30px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 5px solid #222222;
+  color: $primary;
+  margin: 2px;
+  @include respond(sm) {
+    height: 70px;
+    width: 70px !important;
+    margin: 5px;
+  }
+}
+.MuiDialog-paperWidthLg {
+  max-width: 800px !important;
+}
+.MuiContainer-maxWidthLg {
+  overflow: hidden;
+}
+.otpError {
+  border-color: red;
+  background-color: $blush;
+  color: red;
+}

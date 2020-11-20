@@ -1,0 +1,29 @@
+@import '../../../styles/variables';
+@import '../../../styles/desktop.scss';
+@import '../../../styles/mixins.scss';
+
+.accordionSingle {
+  &.MuiAccordion-root {
+    display: block;
+    font-family: LimerickMedium;
+    .MuiAccordionDetails-root {
+      display: block;
+    }
+  }
+  &.Separated {
+    margin-top: 16px;
+  }
+  &.BorderColor {
+    border-left: 5px solid;
+    border-color: $blush;
+    &:nth-child(even) {
+      border-color: $primary;
+    }
+  }
+  &.accordionDetails {
+    color: red;
+  }
+  &.accordionSummary {
+    color: red;
+  }
+}
