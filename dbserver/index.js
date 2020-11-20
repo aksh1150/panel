@@ -26,7 +26,7 @@ app.use('/api/customer/', require('./api/customer/'));
 // All advisor request go throw this url
 app.use('/api/advisor/', require('./api/advisor/'));
 
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 5000;
 
 // Print server running message
 app.get('/', (req, res) => {
