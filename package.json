@@ -134,7 +134,15 @@
     "babel-plugin-lodash": "3.3.4",
     "babel-plugin-react-intl": "3.0.1",
     "babel-plugin-styled-components": "1.10.0",
-    "babel-plugin-transform-react-remove-prop-types": "0.4.24"
+    "babel-plugin-transform-react-remove-prop-types": "0.4.24",
+     "style-loader": "0.23.1",
+    "stylelint": "10.0.1",
+    "stylelint-config-recommended": "2.2.0",
+    "stylelint-config-styled-components": "0.1.1",
+    "stylelint-processor-styled-components": "1.6.0",
+    "svg-url-loader": "2.3.2",
+    "terser-webpack-plugin": "^1.4.5",
+    "url-loader": "1.1.2"
   },
   "devDependencies": {
     
@@ -177,14 +185,7 @@
     "rimraf": "2.6.3",
     "sass-loader": "^10.0.3",
     "shelljs": "^0.8.4",
-    "style-loader": "0.23.1",
-    "stylelint": "10.0.1",
-    "stylelint-config-recommended": "2.2.0",
-    "stylelint-config-styled-components": "0.1.1",
-    "stylelint-processor-styled-components": "1.6.0",
-    "svg-url-loader": "2.3.2",
-    "terser-webpack-plugin": "^1.4.5",
-    "url-loader": "1.1.2",
+   
    
     "whatwg-fetch": "3.0.0"
   }
