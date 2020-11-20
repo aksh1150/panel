@@ -142,29 +142,11 @@
     "stylelint-processor-styled-components": "1.6.0",
     "svg-url-loader": "2.3.2",
     "terser-webpack-plugin": "^1.4.5",
-    "url-loader": "1.1.2"
-  },
-  "devDependencies": {
-    
-    
-   
+    "url-loader": "1.1.2",
+    "css-loader": "2.1.1",
     "compare-versions": "3.4.0",
     "compression-webpack-plugin": "2.0.0",
     "coveralls": "3.0.3",
-    "css-loader": "2.1.1",
-    "eslint": "^7.11.0",
-    "eslint-config-airbnb": "^18.2.0",
-    "eslint-config-airbnb-base": "13.1.0",
-    "eslint-config-prettier": "4.1.0",
-    "eslint-import-resolver-webpack": "0.11.1",
-    "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-jsx-a11y": "^6.3.1",
-    "eslint-plugin-prettier": "3.0.1",
-    "eslint-plugin-react": "^7.21.5",
-    "eslint-plugin-react-hooks": "^4.2.0",
-    "eslint-plugin-redux-saga": "1.0.0",
-    
-    
     "image-webpack-loader": "4.6.0",
     "imports-loader": "0.8.0",
     "jest-cli": "24.7.1",
@@ -188,5 +170,26 @@
    
    
     "whatwg-fetch": "3.0.0"
+  },
+  "devDependencies": {
+    
+    
+   
+    
+    
+    "eslint": "^7.11.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-config-airbnb-base": "13.1.0",
+    "eslint-config-prettier": "4.1.0",
+    "eslint-import-resolver-webpack": "0.11.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-prettier": "3.0.1",
+    "eslint-plugin-react": "^7.21.5",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "eslint-plugin-redux-saga": "1.0.0"
+    
+    
+    
   }
 }
