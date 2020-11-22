@@ -1,2 +1,2 @@
-const API_URL = 'http://localhost:8081/api/';
+const API_URL = 'https://aks-server.herokuapp.com/api/';
 export default API_URL;
