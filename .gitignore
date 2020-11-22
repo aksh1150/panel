@@ -3,13 +3,13 @@ coverage
 build
 node_modules
 stats.json
-
+dbserver
 # Cruft
 .DS_Store
 npm-debug.log
 .idea
 
-dbserver
+
 #testing Pages
 app/containers/testpage
 app/containers/testmode
