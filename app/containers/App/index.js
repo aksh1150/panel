@@ -9,7 +9,6 @@
 
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
-
 import HomePage from '../HomePage/Loadable';
 import UserInfo from '../UserInfo/Loadable';
 import AddContact from '../AddContact/Loadable';
