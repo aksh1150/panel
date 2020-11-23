@@ -9,6 +9,7 @@
 
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
+
 import HomePage from '../HomePage/Loadable';
 import UserInfo from '../UserInfo/Loadable';
 import AddContact from '../AddContact/Loadable';
@@ -19,7 +20,7 @@ import ShowAllCases from '../ShowAllCases/Loadable';
 import ShowAllLeads from '../ShowAllLeads/Loadable';
 import EditCase from '../EditCase/Loadable';
 import EditLead from '../EditLead/Loadable';
-import EditContact from '../EditContact/Loadable';
+import EditContact from '../editContact/Loadable';
 import ForgotPassword from '../ForgotPassword/Loadable';
 import NotFoundPage from '../NotFoundPage/Loadable';
 import SignUp from '../SignUp/Loadable';
