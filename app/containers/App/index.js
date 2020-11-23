@@ -17,8 +17,8 @@ import AddNewCase from '../AddNewCase/Loadable';
 import AddNewLead from '../AddNewLead/Loadable';
 import ShowAllContact from '../ShowAllContact/Loadable';
 import ShowAllCases from '../ShowAllCases/Loadable';
-// eslint-disable-next-line import/no-named-as-default-member
 import ShowAllLeads from '../ShowAllLeads/Loadable';
+import EditContact from '../EditContact/Loadable';
 import EditCase from '../EditCase/Loadable';
 import EditLead from '../EditLead/Loadable';
 import ForgotPassword from '../ForgotPassword/Loadable';
@@ -51,6 +51,7 @@ function App() {
         <PrivateRoute path="/leads" component={ShowAllLeads} />
         <PrivateRoute path="/editcase:id" component={EditCase} />
         <PrivateRoute path="/editlead:id" component={EditLead} />
+        <PrivateRoute path="/editcontact:id" component={EditContact} />
         <PrivateRoute path="/addCase" component={AddNewCase} />
         <PrivateRoute path="/addLead" component={AddNewLead} />
 
