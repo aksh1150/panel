@@ -20,7 +20,7 @@ import ShowAllCases from '../ShowAllCases/Loadable';
 import ShowAllLeads from '../ShowAllLeads/Loadable';
 import EditCase from '../EditCase/Loadable';
 import EditLead from '../EditLead/Loadable';
-import EditContact from '../editContact/Loadable';
+import EditContact from '../EditContact/Loadable';
 import ForgotPassword from '../ForgotPassword/Loadable';
 import NotFoundPage from '../NotFoundPage/Loadable';
 import SignUp from '../SignUp/Loadable';
