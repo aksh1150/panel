@@ -301,6 +301,7 @@ const AddNewCase = ({ history }) => {
               })
               .then(
                 async userUpdates => {
+                  console.log(userUpdates);
                   await localStorage.removeItem('caribou-case-id');
                   await localStorage.removeItem('caribou-case-contacts');
                   setAlertType('success');
