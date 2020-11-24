@@ -23,7 +23,6 @@ import EditLead from '../EditLead/Loadable';
 import EditContact from '../EditContact/Loadable';
 import ForgotPassword from '../ForgotPassword/Loadable';
 import NotFoundPage from '../NotFoundPage/Loadable';
-import TestPage from '../testpage/Loadable';
 import SignUp from '../SignUp/Loadable';
 import ResetPassword from '../ResetPassword/Loadable';
 import GlobalStyle from '../../global-styles';
