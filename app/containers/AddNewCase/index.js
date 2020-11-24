@@ -268,6 +268,7 @@ const AddNewCase = ({ history }) => {
   // Add new case
   const save = async e => {
     e.preventDefault();
+
     const advisorId = JSON.parse(localStorage.getItem('caribou-advisor'));
     if (!getCaseId) {
       setAlertType('error');
@@ -288,7 +289,7 @@ const AddNewCase = ({ history }) => {
           userId,
           caseStage,
           advisorId,
-          advisor,
+          newAdvisorValue,
         })
         .then(
           async caseres => {
@@ -296,7 +297,7 @@ const AddNewCase = ({ history }) => {
               .put(`${API_URL}customer/updateCaseId`, {
                 userId,
                 jsonCase,
-                advisor,
+                newAdvisorValue,
               })
               .then(
                 async userUpdates => {
