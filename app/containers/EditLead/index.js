@@ -114,6 +114,7 @@ const EditLead = ({ history, match }) => {
   const [isEdit, setIsEdit] = useState(true);
   const [displaySave, setDisplaySave] = useState(false);
   const [isDialogOpen, setIsDialogOpen] = useState(false);
+  const [isConvertToCase, setIsConvertToCase] = useState(false);
   const [getCaseId, setGetCaseId] = useState('');
   const [existingCustomerData, setExistingCustomerData] = useState({
     fname: '',
@@ -641,6 +642,14 @@ const EditLead = ({ history, match }) => {
   const notLeave = () => {
     setIsDialogOpen(false);
   };
+
+  const wantToConvertToCase = () => {
+    setIsConvertToCase(true);
+  };
+  const doNotConvert = () => {
+    setIsConvertToCase(false);
+  };
+
   const handleClose = (event, reason) => {
     if (reason === 'clickaway') {
       return;
@@ -1103,6 +1112,29 @@ const EditLead = ({ history, match }) => {
           ''
         )}
 
+        {isConvertToCase ? (
+          <Popup
+            title="Are you sure you want to convert this lead to case?"
+            isDialogOpen={isConvertToCase}
+            closeDialog={doNotConvert}
+          >
+            <Container maxWidth="lg">
+              <Grid container spacing={10} alignItems="center">
+                <Grid item sm={6} xs={12}>
+                  <Buttons clickEvent={doNotConvert}>No</Buttons>
+                </Grid>
+                <Grid item sm={6} xs={12}>
+                  <BaseLink clickEvent={convertToCase}>
+                    Yes, Convert to Case
+                  </BaseLink>
+                </Grid>
+              </Grid>
+            </Container>
+          </Popup>
+        ) : (
+          ''
+        )}
+
         <form>
           <Grid container spacing={3} justify="center" alignItems="center" />
           <Grid container spacing={3}>
@@ -1122,7 +1154,7 @@ const EditLead = ({ history, match }) => {
                     <Buttons clickEvent={enableEdit}>Edit</Buttons>
                   </Grid>
                   <Grid item lg={3} md={3} sm={6} xs={6}>
-                    <BaseLink clickEvent={convertToCase}>
+                    <BaseLink clickEvent={wantToConvertToCase}>
                       Convert to Case
                     </BaseLink>
                   </Grid>
